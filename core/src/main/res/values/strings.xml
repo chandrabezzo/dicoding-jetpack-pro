@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="message_perizinan">Izinkan aplikasi mengakses %s supaya aplikasi dapat berjalan baik.</string>
+    <string name="not_support_play_service">Tidak support Google Play Service</string>
+    <string name="device_not_support">Perangkat ini tidak didukung</string>
+    <string name="title_permission">Perizinan Aplikasi</string>
+    <string name="content_permission">Ijinkan aplikasi untuk mengakses %s?</string>
+    <string name="penyimpanan">Penyimpanan</string>
+
+    <!-- Handle Error -->
+    <string name="service_not_found">Service tidak ditemukan</string>
+    <string name="network_not_stable">Pastikan koneksi internet anda stabil</string>
+    <string name="server_error">Server Error</string>
+    <string name="service_not_connected">Tidak terhubung ke service</string>
+    <string name="some_error">Terjadi kesalahan</string>
+</resources>
