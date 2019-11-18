@@ -19,11 +19,6 @@ import java.util.Locale;
 public class LocaleUtil {
     private static final String SELECTED_LANGUAGE = "LocaleUtil.Selected.Language";
 
-    public static Context onAttach(Context context) {
-        String lang = getPersistedData(context, Locale.getDefault().getLanguage());
-        return setLocale(context, lang);
-    }
-
     public static Context onAttach(Context context, String defaultLanguage) {
         String lang = getPersistedData(context, defaultLanguage);
         return setLocale(context, lang);

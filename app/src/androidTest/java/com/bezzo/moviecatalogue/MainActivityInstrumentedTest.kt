@@ -35,5 +35,6 @@ class MainActivityInstrumentedTest {
         onView(withId(R.id.nav_movie)).check(matches(isSelected()))
         onView(withId(R.id.nav_about)).check(matches(isDisplayed()))
         onView(withId(R.id.nav_about)).perform(click())
+        onView(withId(R.id.nav_about)).check(matches(isSelected()))
     }
 }

@@ -13,7 +13,7 @@ class DetailTvActivity : BaseActivity() {
     lateinit var data: Movie
 
     override fun onInitializedView(savedInstanceState: Bundle?) {
-        dataReceived?.getParcelable<Movie>(AppConstant.DATA_MOVIE)?.let {
+        dataReceived?.getParcelable<Movie>(AppConstant.DATA_TV)?.let {
             data = it
         }
 

@@ -12,7 +12,7 @@ import com.bezzo.moviecatalogue.R
 import com.bezzo.moviecatalogue.model.Movie
 import kotlinx.android.synthetic.main.item_rv_movie.view.*
 
-class MovieRVAdapter constructor(private val context: Context, private val list: ArrayList<Movie>)
+class MovieRVAdapter constructor(private val list: ArrayList<Movie>)
     : RecyclerView.Adapter<MovieRVAdapter.Item>(){
 
     lateinit var listener: OnItemClickListener
@@ -47,7 +47,7 @@ class MovieRVAdapter constructor(private val context: Context, private val list:
         override fun setContent(model: Movie) {
             itemView.tv_judul.text = "${model.title} (${model.releaseYear})"
             itemView.tv_desc.text = "${model.userScore} - ${model.genre}"
-            GlideApp.with(context).load(model.image).into(itemView.iv_profile)
+            GlideApp.with(itemView.context).load(model.image).into(itemView.iv_profile)
         }
     }
 }
