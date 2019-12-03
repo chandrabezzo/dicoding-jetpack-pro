@@ -5,8 +5,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import com.bezzo.moviecatalogue.R
-import com.bezzo.moviecatalogue.features.movie.MovieFragment
-import com.bezzo.moviecatalogue.features.tvShow.TvShowFragment
+import com.bezzo.moviecatalogue.ui.movie.MovieFragment
+import com.bezzo.moviecatalogue.ui.tvShow.TvShowFragment
 
 
 class ListMovieVPAdapter(val context: Context, fragmentManager: FragmentManager)

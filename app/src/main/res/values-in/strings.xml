@@ -14,5 +14,10 @@
     <string name="indonesia">Indonesia</string>
     <string name="english">English</string>
     <string name="retry">Coba Lagi</string>
+    <string name="favorite">Favorite</string>
+    <string name="judul_name">%1$s (%2$s)</string>
+    <string name="empty_favorite">Tidak ada data favorite</string>
+    <string name="something_error">Terjadi Kesalahan</string>
+    <string name="berhasil_ditambahkan">Berhasil Ditambahkan</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>

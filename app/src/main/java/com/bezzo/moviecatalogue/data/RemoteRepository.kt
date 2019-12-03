@@ -1,10 +1,14 @@
 package com.bezzo.moviecatalogue.data
 
 import android.os.Handler
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.bezzo.moviecatalogue.data.model.Movie
 import com.bezzo.moviecatalogue.data.model.TvShow
+import com.bezzo.moviecatalogue.util.ApiResponse
 import com.bezzo.moviecatalogue.util.EspressoIdlingResource
 import com.bezzo.moviecatalogue.util.JsonHelper
+import com.bezzo.moviecatalogue.util.StatusResponse
 
 
 class RemoteRepository(private val jsonHelper: JsonHelper) {
@@ -27,7 +31,7 @@ class RemoteRepository(private val jsonHelper: JsonHelper) {
         val handler = Handler()
         handler.postDelayed(
             { callback.onDataReceived(jsonHelper.loadMovies())
-              EspressoIdlingResource.decrement() },
+                EspressoIdlingResource.decrement() },
             SERVICE_LATENCY_IN_MILLIS.toLong()
         )
     }
@@ -37,7 +41,7 @@ class RemoteRepository(private val jsonHelper: JsonHelper) {
         val handler = Handler()
         handler.postDelayed(
             { callback.onDataReceived(jsonHelper.loadTvShow())
-              EspressoIdlingResource.decrement() },
+                EspressoIdlingResource.decrement() },
             SERVICE_LATENCY_IN_MILLIS.toLong())
     }
 }

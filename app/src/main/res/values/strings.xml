@@ -14,5 +14,13 @@
     <string name="indonesia">Indonesia</string>
     <string name="english">English</string>
     <string name="retry">Retry</string>
+    <string name="favorite">Favorite</string>
+    <string name="judul_name">%1$s (%2$s)</string>
+    <string name="empty_favorite">Empty Favorite</string>
+    <string name="something_error">Something Error</string>
+    <string name="berhasil_ditambahkan">Add Success</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>

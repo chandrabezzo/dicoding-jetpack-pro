@@ -8,7 +8,7 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.rule.ActivityTestRule
 import androidx.test.runner.AndroidJUnit4
-import com.bezzo.moviecatalogue.features.main.MainActivity
+import com.bezzo.moviecatalogue.ui.main.MainActivity
 import com.bezzo.moviecatalogue.util.EspressoIdlingResource
 import com.google.android.material.tabs.TabLayout
 import org.hamcrest.CoreMatchers.allOf

@@ -4,9 +4,9 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import com.bezzo.core.data.session.SessionHelper
-import com.bezzo.moviecatalogue.data.MovieRepository
+import com.bezzo.moviecatalogue.data.repository.MovieRepository
 import com.bezzo.moviecatalogue.data.model.TvShow
-import com.bezzo.moviecatalogue.features.tvShow.TvShowViewModel
+import com.bezzo.moviecatalogue.viewmodel.TvShowViewModel
 import com.bezzo.moviecatalogue.util.FakeData
 import org.junit.Before
 import org.junit.Rule
@@ -19,7 +19,8 @@ import org.mockito.Mockito.*
 class TvShowViewModelTest {
 
     lateinit var viewModel: TvShowViewModel
-    private val repository: MovieRepository = mock(MovieRepository::class.java)
+    private val repository: MovieRepository = mock(
+        MovieRepository::class.java)
     private val observer: Observer<MutableList<TvShow>> = mock(Observer::class.java) as Observer<MutableList<TvShow>>
 
     @Rule @JvmField
@@ -27,7 +28,10 @@ class TvShowViewModelTest {
 
     @Before
     fun setup(){
-        viewModel = TvShowViewModel(repository, SessionHelper())
+        viewModel = TvShowViewModel(
+            repository,
+            SessionHelper()
+        )
     }
 
     @Test
